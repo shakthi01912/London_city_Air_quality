@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 
 load_dotenv()
@@ -20,6 +21,8 @@ def fetch_air_quality_data(api_key, city):
         
 
         if "results" in data and data["results"]:
+            df = pd.DataFrame(data['results'])
+            print(df.head())
       
             if not os.path.exists('data'):
                 os.makedirs('data')
