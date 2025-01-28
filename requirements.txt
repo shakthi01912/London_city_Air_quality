@@ -1,0 +1,8 @@
+requests
+pandas
+matplotlib
+folium
+seaborn
+python-dotenv
+
+#  pip install -r requirements.txt
