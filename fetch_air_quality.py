@@ -41,13 +41,12 @@ def fetch_air_quality_data(api_key, city):
         return None
 
 
-# Test the function by fetching data for a specific city
 data = fetch_air_quality_data(api_key, "London")
 
-# Check and print the data returned by the function
+
 if data:
     print("Fetched Data:")
     for item in data:
-        print(item)  # Print each record for clarity
+        print(item) 
 else:
     print("No data fetched.")
